@@ -23,41 +23,35 @@
           <a href="./index.html" class="header_logo-link"
             >SIMPLY<span class="header_logo-link-part">CHOCOLATE</span
             ><svg width="24px" height="24px">
-              <use href="./images/icons.svg#icon-chocolate"></use>
+              <use href="./images/icons.svg#icon-choco-logo"></use>
             </svg>
           </a>
           <ul class="header_list">
-            <li><a href="Home" class="header_list-links">Home</a></li>
+            <li><a href="./index.html" class="header_list-links">Home</a></li>
             <li>
-              <a href="How it’s made?" class="header_list-links"
-                >How it’s made?</a
-              >
+              <a href="#" class="header_list-links">How it’s made?</a>
             </li>
             <li>
-              <a href="Chocolate is loved" class="header_list-links"
-                >Chocolate is loved</a
-              >
+              <a href="#" class="header_list-links">Chocolate is loved</a>
             </li>
           </ul>
         </nav>
-        <div class="header_social-icons">
-          <ul class="header_social-list">
-            <li>
-              <a href="">
-                <svg width="24px" height="24px" class="hero-icons">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <svg width="24px" height="24px" class="hero-icons">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="header_social-list">
+          <li class="header_social-list-item">
+            <a href="#">
+              <svg width="24px" height="24px" class="hero-icons">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header_social-list-item">
+            <a href="#">
+              <svg width="24px" height="24px" class="hero-icons">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -71,21 +65,29 @@
           <div class="hero-buttons-box">
             <ul class="hero-bttns-list">
               <li>
-                <button type="button" class="hero-button-main">Buy now</button>
+                <a href="#" class="hero-bttns-link"
+                  ><button type="button" class="hero-button-main">
+                    Buy now
+                  </button></a
+                >
               </li>
               <li>
-                <button type="button" class="hero-button-secondary">
-                  How it’s made
-                </button>
+                <a href="#" class="hero-bttns-link">
+                  <button type="button" class="hero-button-secondary">
+                    How it’s made
+                  </button>
+                </a>
               </li>
             </ul>
             <div class="hero-scroll-box">
-              <p class="hero-txt">scroll down</p>
-              <div class="hero-button-scroll">
-                <svg width="22" height="22">
-                  <use href="./images/icons.svg#icon-scroll"></use>
-                </svg>
-              </div>
+              <a href="#" class="hero-scroll-box-links">
+                scroll down
+                <div class="hero-button-scroll">
+                  <svg width="22" height="22" class="hero-bttn-angle">
+                    <use href="./images/icons.svg#icon-angle-small"></use>
+                  </svg>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -93,14 +95,15 @@
       <!-- Benefits Section-->
       <section class="benefits-wrapper">
         <div class="container">
+          <h2 class="visually-hidden">Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-list-item">
-              <div class="benefits-icon">
-                <svg width="32px" height="32px">
-                  <use href="./images/icons.svg#icon-choco-bar"></use>
+              <div class="benefits-icon-box">
+                <svg width="32px" height="32px" class="benefits-icon">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
                 </svg>
               </div>
-              <h2 class="benefits-title">Unsurpassed taste</h2>
+              <h3 class="benefits-title">Unsurpassed taste</h3>
               <p class="benefits-txt">
                 Crafted with the finest quality cocoa beans and a dedication to
                 perfection, each bite is a decadent experience that simply
@@ -109,12 +112,12 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-icon">
-                <svg width="32px" height="32px">
+              <div class="benefits-icon-box">
+                <svg width="32px" height="32px" class="benefits-icon">
                   <use href="./images/icons.svg#icon-coin"></use>
                 </svg>
               </div>
-              <h2 class="benefits-title">Affordable price</h2>
+              <h3 class="benefits-title">Affordable price</h3>
               <p class="benefits-txt">
                 Indulge in high-quality chocolate without breaking the bank with
                 Simply Chocolate's selection of affordable treats. Enjoy
@@ -124,12 +127,12 @@
               </p>
             </li>
             <li class="benefits-list-item">
-              <div class="benefits-icon">
-                <svg width="32px" height="32px">
+              <div class="benefits-icon-box">
+                <svg width="32px" height="32px" class="benefits-icon">
                   <use href="./images/icons.svg#icon-spoon"></use>
                 </svg>
               </div>
-              <h2 class="benefits-title">Own production</h2>
+              <h3 class="benefits-title">Own production</h3>
               <p class="benefits-txt">
                 We take pride in our own production process, ensuring that every
                 step is carefully crafted to perfection. From selecting the
@@ -317,6 +320,7 @@
               </ul>
             </address>
           </div>
+          <hr class="footer-line" />
           <div class="footer-bottom-box">
             <nav class="footer-nav">
               <ul class="footer-nav-list">
