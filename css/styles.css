@@ -22,7 +22,7 @@ main {
   flex-grow: 1;
 }
 .container {
-  max-width: 1136px;
+  max-width: 1200px;
   min-width: 320px;
   padding-left: 32px;
   padding-right: 32px;
@@ -130,7 +130,7 @@ main {
   background-position: center;
   margin: 0 auto;
   max-width: 1200px;
-  padding: 381px 0 40px 0;
+  padding: 381px 40px 40px 40px;
 }
 .hero-title {
   font-weight: 500;
@@ -317,16 +317,25 @@ main {
 }
 .ingredients-list {
   display: flex;
-  gap: 19px;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 .ingredients-list-item {
   border-radius: 15px;
-  width: calc((100% - 3 * 19px) / 4);
+  width: calc((100% - 57px) / 4);
   height: 270px;
-  justify-items: center;
   padding: 28px 32px;
+  background-color: #1e1823;
+  color: #fff;
+}
+.ingredients-list-item:nth-child(even) {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+  color: #111;
+}
+.ingredients-list-item:first-child {
   background-color: #fd9222;
 }
 .ingredients-list-item-text {
@@ -336,7 +345,6 @@ main {
   line-height: 129%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #111;
   padding-top: 36px;
   margin: 0;
 }
@@ -359,7 +367,7 @@ main {
   gap: 24px;
   margin-top: 28px;
   margin-bottom: 0;
-  padding-left: 0;
+  padding-left: 20px;
 }
 .how-made_box {
   display: flex;
@@ -388,21 +396,24 @@ main {
   color: #111;
   margin: 0;
   max-width: 350px;
+  padding-bottom: 24px;
 }
 .Reviews-wrapper {
   display: flex;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 .Reviews-list {
   padding: 50px 0;
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 .Reviews-list-item {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
@@ -411,7 +422,11 @@ main {
   box-shadow: 0 9px 100px 0 rgba(17, 17, 17, 0.03);
   background: #fff;
   max-width: calc((100% - 2 * 28px) / 3);
-  padding: 24px;
+  padding: 56px 24px 24px 24px;
+}
+.reviews-img {
+  position: absolute;
+  top: -45px;
 }
 .Reviews-button {
   font-weight: 600;
@@ -423,6 +438,14 @@ main {
   width: 222px;
   height: 50px;
   background-color: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.Reviews-button:hover {
+  background-color: #fd9222;
+  border: none;
+  color: #fff;
 }
 .reviews-list-txt {
   font-weight: 400;
@@ -431,6 +454,7 @@ main {
   letter-spacing: -0.02em;
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
+  margin: 0;
 }
 .footer-wrapper {
   margin: 0 auto;
@@ -487,6 +511,10 @@ main {
   letter-spacing: -0.02em;
   color: #fff;
   padding: 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-nav-links:hover {
+  color: #fd9222;
 }
 .footer-nav-list {
   display: flex;
@@ -509,6 +537,13 @@ main {
   color: #fff;
   justify-content: center;
   align-items: center;
+  border: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-button:hover {
+  color: #fd9222;
+  background-color: #fcf1e0;
 }
 .footer-subscribe-box {
   display: flex;
@@ -526,7 +561,18 @@ main {
   width: 313px;
   height: 52px;
   background-color: transparent;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-form-input:hover,
+.footer-form-input:focus,
+.footer-form-input:focus-within {
+  border: 1.5px solid #fd9222;
+}
+
 .footer-line {
   border: 1px solid rgba(255, 255, 255, 0.1);
   width: 1136px;
