@@ -26,19 +26,12 @@ button {
   cursor: pointer;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1168px;
   min-width: 320px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
-/*.container {
-  max-width: 1130px;
-  min-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}*/
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -154,14 +147,12 @@ button {
 }
 .hero-button-main {
   font-weight: 600;
-  font-size: 14px;
   color: #fff;
   background-color: #fd9222;
   border-radius: 100px;
   padding: 14px 40px;
   min-width: 144px;
   text-align: center;
-  cursor: pointer;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -172,7 +163,6 @@ button {
 }
 .hero-button-secondary {
   font-weight: 600;
-  font-size: 14px;
   color: #fff;
   background: transparent;
   border: 1px solid #fff;
@@ -181,7 +171,6 @@ button {
   min-width: 183px;
   text-align: center;
   padding: 14px 40px;
-  cursor: pointer;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -223,10 +212,9 @@ button {
   align-items: center;
   gap: 14px;
   padding: 0;
-  margin: 0;
   font-weight: 500;
   font-size: 14px;
-  line-height: 129%;
+  line-height: 1.28;
   letter-spacing: -0.03em;
   color: #fff;
   margin: auto;
@@ -242,7 +230,6 @@ button {
 .hero-scroll-box-links:hover {
   color: #fd9222;
 }
-
 .hero-bttns-link {
   margin: 0;
   padding: 0;
@@ -267,8 +254,6 @@ button {
   margin-bottom: 18px;
 }
 .benefits-txt {
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.7);
   margin: 0;
@@ -284,7 +269,19 @@ button {
   max-width: calc((100% - 2 * 88px) / 3);
   text-align: left;
   padding: 0;
+  position: relative;
 }
+/* .benefits-list > .benefits-list-item > .benefits-txt::after {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  width: 124px;
+  height: 0px;
+  transform: rotate(-90deg);
+  content: "";
+  margin: 0;
+  padding: 0;
+  right: 0;
+  top: 0;
+} */
 .benefits-icon-box {
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 365px;
@@ -319,8 +316,6 @@ button {
   color: #fd9222;
 }
 .ingredients-txt {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -355,9 +350,7 @@ button {
   background-color: #fd9222;
 }
 .ingredients-list-item-text {
-  font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -394,7 +387,6 @@ button {
   margin-bottom: 8px;
 }
 .ing-bttn-first {
-  font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   color: #fff;
@@ -406,7 +398,6 @@ button {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ing-bttn-sec {
-  font-weight: 400;
   font-size: 10px;
   line-height: 1.2;
   color: #111;
@@ -428,9 +419,7 @@ button {
   color: #fff;
 }
 .ing-overlay-txt {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28571;
+  line-height: 1.29;
   letter-spacing: -0.02em;
   color: #111;
   margin: 0;
@@ -467,12 +456,6 @@ button {
   margin: 0;
   padding-left: 0;
 }
-/* .how-made-icon {
-  border-radius: 100%;
-  fill: #4c4c4c;
-  stroke-width: 1px;
-  stroke: #eceded;
-} */
 .how-made-icon {
   margin-right: 8px;
   border-radius: 100%;
@@ -494,8 +477,6 @@ button {
   padding: 32px;
 }
 .how-made_list-item {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   color: #111;
@@ -566,8 +547,6 @@ button {
   color: #fff;
 }
 .reviews-list-txt {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   text-align: center;
@@ -596,8 +575,6 @@ button {
   color: #fff;
 }
 .footer-contacts-link {
-  font-weight: 400;
-  font-size: 14px;
   line-height: 129%;
   letter-spacing: -0.02em;
   color: #fff;
@@ -605,7 +582,6 @@ button {
 }
 .footer-contacts-txt {
   font-weight: 500;
-  font-size: 14px;
   line-height: 129%;
   color: #fff;
   font-style: normal;
@@ -625,7 +601,6 @@ button {
 }
 .footer-nav-links {
   font-weight: 500;
-  font-size: 14px;
   line-height: 114%;
   letter-spacing: -0.02em;
   color: #fff;
@@ -659,6 +634,7 @@ button {
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: #fd9222;
 }
 .footer-button:hover {
   color: #fd9222;
@@ -680,11 +656,11 @@ button {
   width: 313px;
   height: 52px;
   background-color: transparent;
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: rgba(255, 255, 255, 0.3);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: #fd9222;
 }
 .footer-form-input:hover,
 .footer-form-input:focus,
@@ -782,8 +758,6 @@ button {
 }
 .form-label {
   display: block;
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
   display: block;
@@ -802,7 +776,6 @@ button {
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
@@ -837,7 +810,6 @@ button {
   outline: transparent;
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
@@ -846,7 +818,6 @@ button {
   border-color: #fd9222;
 }
 .text-input::placeholder {
-  font-weight: 400;
   font-size: 18px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
@@ -859,8 +830,6 @@ button {
   cursor: pointer;
 }
 .form-checkbox-label {
-  font-weight: 400;
-  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.6);
   cursor: pointer;
@@ -895,7 +864,6 @@ button {
   border: none;
   outline: none;
   font-weight: 600;
-  font-size: 14px;
   color: #fff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -913,3 +881,4 @@ button {
   background-color: #fcf1e0;
   color: #fd9222;
 }
+/* #endregion */
