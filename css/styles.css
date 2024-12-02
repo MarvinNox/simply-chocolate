@@ -710,8 +710,8 @@ button {
   z-index: 999;
   display: flex;
   justify-content: center;
-  /* opacity: 0;
-  pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -729,31 +729,30 @@ button {
   min-height: 794px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(-50%, -50%);
-  padding: 24px 24px 40px 40px;
+  padding: 38px 40px 40px 40px;
 }
 .bttn-close {
   position: absolute;
   top: 24px;
   right: 24px;
+  background-color: inherit;
+  border: none;
   border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #2e2f42;
+  stroke: #111111;
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
 }
 .bttn-close:hover,
 .bttn-close:focus {
-  background-color: #404bbf;
-  fill: #fff;
-  border: none;
+  background-color: #fd9222;
+  stroke: #fff;
 }
 .modal-icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -797,7 +796,7 @@ button {
 .modal-input {
   border: 1px solid rgba(17, 17, 17, 0.05);
   border-radius: 13px;
-  padding: 22px 24px;
+  padding-left: 62px;
   width: 436px;
   height: 68px;
   outline: transparent;
@@ -816,8 +815,12 @@ button {
   left: 24px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #fd9222;
+  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  stroke: #404040;
+  fill: transparent;
+}
+.modal-input:focus + .modal-icon {
+  stroke: #fd9222;
 }
 .modal-field-comment {
   margin-bottom: 18px;
@@ -848,6 +851,7 @@ button {
   letter-spacing: -0.02em;
   color: rgba(64, 64, 64, 0.3);
 }
+
 .field-checkbox {
   margin-bottom: 40px;
 }
@@ -886,7 +890,7 @@ button {
   padding: 14px 40px;
   min-width: 117px;
   height: 45px;
-  margin: 0 auto;
+  margin: 0 auto 0 0;
   background: #fd9222;
   border: none;
   outline: none;
