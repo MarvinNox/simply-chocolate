@@ -265,13 +265,14 @@ button {
   justify-content: space-between;
   padding: 0;
   margin: auto;
-  width: 1100px;
+  max-width: 1100px;
 }
 .benefits-list-item {
   max-width: calc((100% - 2 * 70px) / 3);
-  padding-right: 18px;
   position: relative;
+  padding-right: 18px;
 }
+
 .benefits-list-item:last-child {
   padding-right: 0;
 }
@@ -280,10 +281,8 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
   content: "";
-  margin: 0;
-  padding: 0;
   top: 25%;
-  right: 0;
+  right: -1px;
 }
 .benefits-icon-box {
   border: 1px solid rgba(255, 255, 255, 0.5);
