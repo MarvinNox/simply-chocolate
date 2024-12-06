@@ -269,15 +269,13 @@ button {
 }
 .benefits-list-item {
   max-width: calc((100% - 2 * 70px) / 3);
-  text-align: left;
-  padding: 0;
   padding-right: 18px;
   position: relative;
 }
 .benefits-list-item:last-child {
   padding-right: 0;
 }
-.benefits-list-item:not(:last-child) .benefits-list-item::after {
+.benefits-list-item:not(:last-child)::after {
   position: absolute;
   border: 1px solid rgba(255, 255, 255, 0.5);
   height: 124px;
@@ -363,8 +361,6 @@ button {
   margin: 0;
 }
 .ingredients-overlay {
-  text-overflow: ellipsis;
-  overflow: hidden;
   position: absolute;
   line-clamp: 8;
   border-radius: 15px;
@@ -432,6 +428,10 @@ button {
   color: #111;
   margin: 0;
   margin-top: 14px;
+  -webkit-line-clamp: 8;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 /* #endregion */
 /* #region how-its-made */
