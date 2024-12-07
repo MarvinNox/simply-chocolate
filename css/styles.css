@@ -243,7 +243,6 @@ button {
 /* #region Benefits */
 .benefits-wrapper {
   background-color: #1e1823;
-  height: 344px;
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 72px;
@@ -269,9 +268,8 @@ button {
   max-width: 1100px;
 }
 .benefits-list-item {
-  max-width: calc((100% - 2 * 70px) / 3);
+  max-width: calc((100% - 2 * 88px) / 3);
   position: relative;
-  padding-right: 18px;
 }
 
 .benefits-list-item:last-child {
@@ -283,7 +281,7 @@ button {
   height: 124px;
   content: "";
   top: 25%;
-  right: -1px;
+  right: -18px;
 }
 .benefits-icon-box {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -373,6 +371,7 @@ button {
   left: 0;
   margin: 0;
   padding: 20px;
+  /* scrollbar-width: thin; */
 }
 .ingredients-list-item:hover .ingredients-overlay {
   transform: translateY(0);
@@ -428,10 +427,10 @@ button {
   color: #111;
   margin: 0;
   margin-top: 14px;
-  -webkit-line-clamp: 8;
+  /* -webkit-line-clamp: 8;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  overflow: hidden; */
 }
 /* #endregion */
 /* #region how-its-made */
