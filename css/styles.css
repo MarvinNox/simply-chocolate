@@ -47,13 +47,25 @@ button {
 }
 /* #endregion */
 /* #region Header */
+.container-header {
+  max-width: 1200px;
+  min-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+/* ^ NEED TO FXS THAT ^ */
 .header-flex {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .header_wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
 }
 .header_logo-link {
   font-style: italic;
@@ -360,7 +372,6 @@ button {
 }
 .ingredients-overlay {
   position: absolute;
-  line-clamp: 8;
   border-radius: 15px;
   width: 100%;
   height: 100%;
