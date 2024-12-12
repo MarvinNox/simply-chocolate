@@ -19,7 +19,7 @@
   </head>
   <body>
     <!--#region header-->
-    <header class="header_wrapper">
+    <header id="header-scroll" class="header_wrapper">
       <div class="container header-flex">
         <nav class="header_nav-container">
           <a href="./index.html" class="header_logo-link"
@@ -29,7 +29,9 @@
             </svg>
           </a>
           <ul class="header_list">
-            <li><a href="./index.html" class="header_list-links">Home</a></li>
+            <li>
+              <a href="./index.html" class="header_list-links current">Home</a>
+            </li>
             <li>
               <a href="#how-made" class="header_list-links">How it’s made?</a>
             </li>
@@ -363,7 +365,7 @@
               </p>
             </li>
           </ul>
-          <button id="Leave-review" type="submit" class="reviews-button">
+          <button id="open-modal" type="button" class="reviews-button">
             Leave a review
           </button>
         </div>
@@ -428,9 +430,9 @@
     </footer>
     <!--#endregion-->
     <!-- #region Modal window -->
-    <div class="modal-overlay">
+    <div id="modal-window" class="modal-overlay">
       <div class="modal">
-        <button id="close-button" type="button" class="bttn-close">
+        <button id="close-modal" type="button" class="bttn-close">
           <svg width="28" height="28" class="modal-icon-close">
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
@@ -515,5 +517,7 @@
       </div>
     </div>
     <!-- #endregion -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/header.js"></script>
   </body>
 </html>
