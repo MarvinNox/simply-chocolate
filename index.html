@@ -43,25 +43,65 @@
         </nav>
         <ul class="header_social-list">
           <li>
-            <a href="#" class="linkk">
+            <a href="#" class="header-social-link">
               <svg width="24px" height="24px" class="header-icons">
                 <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#" class="header-social-link">
               <svg width="24px" height="24px" class="header-icons">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <button type="button" class="mobile-menu-opener">
+        <button id="mobile-menu-opener" type="button" class="mobile-menu-open">
           <svg class="mobile-icon">
             <use href="./images/icons.svg#icon-mobile-close"></use>
           </svg>
         </button>
+      </div>
+      <div id="mobile-menu" class="mobile-menu">
+        <div class="container mobile-container">
+          <button id="close-mobile-menu" type="button" class="bttn-close">
+            <svg class="modal-icon-close">
+              <use href="./images/icons.svg#icon-x-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <ul class="mobile-menu-list">
+              <li>
+                <a href="./index.html" class="mobile-menu-link current">Home</a>
+              </li>
+              <li>
+                <a href="#how-made" class="mobile-menu-link">How it’s made?</a>
+              </li>
+              <li>
+                <a href="#is-loved" class="mobile-menu-link"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="header_social-list">
+            <li>
+              <a href="#">
+                <svg width="22px" height="22px" class="header-icons">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg width="22px" height="22px" class="header-icons">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!--#endregion-->
@@ -525,5 +565,6 @@
     <!-- #endregion -->
     <script src="./js/modal.js"></script>
     <script src="./js/header.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
