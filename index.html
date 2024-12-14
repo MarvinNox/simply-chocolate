@@ -18,51 +18,60 @@
   </head>
   <body>
     <!--#region header-->
-    <header id="header-scroll" class="header_wrapper">
-      <div class="container header-flex">
-        <nav class="header_nav-container">
-          <a href="./index.html" class="header_logo-link"
-            >SIMPLY<span class="header_logo-link-part">CHOCOLATE</span
-            ><svg class="header_logo-icon">
-              <use href="./images/icons.svg#icon-choco-logo"></use>
-            </svg>
-          </a>
-          <ul class="header_list">
+    <header>
+      <div id="header-scroll" class="header_wrapper">
+        <div class="container header-flex">
+          <nav class="header_nav-container">
+            <a href="./index.html" class="header_logo-link"
+              >SIMPLY<span class="header_logo-link-part">CHOCOLATE</span
+              ><svg class="header_logo-icon">
+                <use href="./images/icons.svg#icon-choco-logo"></use>
+              </svg>
+            </a>
+            <ul class="header_list">
+              <li>
+                <a href="./index.html" class="header_list-links current"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#how-made" class="header_list-links">How it’s made?</a>
+              </li>
+              <li>
+                <a href="#is-loved" class="header_list-links"
+                  >Chocolate is loved</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <ul class="header_social-list">
             <li>
-              <a href="./index.html" class="header_list-links current">Home</a>
+              <a href="#" class="header-social-link">
+                <svg width="24px" height="24px" class="header-icons">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li>
-              <a href="#how-made" class="header_list-links">How it’s made?</a>
-            </li>
-            <li>
-              <a href="#is-loved" class="header_list-links"
-                >Chocolate is loved</a
-              >
+              <a href="#" class="header-social-link">
+                <svg width="24px" height="24px" class="header-icons">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </nav>
-        <ul class="header_social-list">
-          <li>
-            <a href="#" class="header-social-link">
-              <svg width="24px" height="24px" class="header-icons">
-                <use href="./images/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="header-social-link">
-              <svg width="24px" height="24px" class="header-icons">
-                <use href="./images/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <button id="mobile-menu-opener" type="button" class="mobile-menu-open">
-          <svg class="mobile-icon">
-            <use href="./images/icons.svg#icon-mobile-close"></use>
-          </svg>
-        </button>
+          <button
+            id="mobile-menu-opener"
+            type="button"
+            class="mobile-menu-open"
+          >
+            <svg class="mobile-icon">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
+      <!--#region Mobile Menu -->
       <div id="mobile-menu" class="mobile-menu">
         <div class="container mobile-container">
           <button id="close-mobile-menu" type="button" class="bttn-close">
@@ -103,6 +112,7 @@
           </ul>
         </div>
       </div>
+      <!-- #endregion Mobile menu -->
     </header>
     <!--#endregion-->
     <main>
