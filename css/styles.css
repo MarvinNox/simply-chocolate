@@ -1,6 +1,7 @@
 /* #region core */
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
 }
 body {
   background: #fafafa;
@@ -1149,6 +1150,8 @@ button {
   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
   stroke: #404040;
   fill: transparent;
+  width: 17px;
+  height: 17px;
 }
 .modal-input:focus + .modal-icon {
   stroke: #fd9222;
@@ -1210,6 +1213,10 @@ button {
   .form-checkbox-label {
     font-size: 14px;
     line-height: 1.15;
+  }
+  .modal-icon {
+    width: 24px;
+    height: 24px;
   }
 }
 .check {
