@@ -67,7 +67,7 @@ button {
 }
 .header_wrapper {
   z-index: 100;
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: #fff;
@@ -184,7 +184,7 @@ button {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0 auto;
+  margin: 69px auto 0;
   max-width: 375px;
   padding: 395px 40px 20px 40px;
 }
@@ -193,6 +193,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .hero-wrapper {
+    margin: 80px auto 0;
     max-width: 768px;
     padding: 671px 72px 40px 72px;
   }
